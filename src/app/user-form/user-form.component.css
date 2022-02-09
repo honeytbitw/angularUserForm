@@ -1,0 +1,36 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    border: 0.8px solid grey;
+    margin: 10%;
+    padding: 5%;
+}
+
+.form-container{
+    padding: 10px;
+}
+
+.header{
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(29, 29, 29);
+}
+.form-entity{
+    display: flex;
+    margin: 5px;
+}
+::ng-deep mat-form-field{
+    width: 100%;
+    margin-right: 5px;
+}
+
+::ng-deep mat-radio-button{
+    margin-right: 5px;
+}
+
+.button-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end ;
+}
