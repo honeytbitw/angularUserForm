@@ -5,17 +5,17 @@
     <form class="form-container" [formGroup]="myForm">
         <div class="form-entity">
             <mat-form-field appearance="outline">
-                <mat-label>First Name
+                <mat-label>Employee's First Name
                 </mat-label>
-                <input matInput placeholder="First Name" formControlName = "firstName">
+                <input matInput placeholder="Employee's First Name" formControlName = "firstName">
                 <mat-error *ngIf="firstName.invalid && firstName.touched" >
                   Invalid input
                 </mat-error>
               </mat-form-field>
               <mat-form-field appearance="outline">
-                <mat-label>Last Name
+                <mat-label>Employee's Last Name
                 </mat-label>
-                <input matInput placeholder="Last Name" formControlName = "lastName">
+                <input matInput placeholder="Employee's Last Name" formControlName = "lastName">
                 <mat-error *ngIf="lastName.invalid && lastName.touched" >
                   Invalid input
                 </mat-error>
@@ -23,9 +23,9 @@
         </div>
         <div class="form-entity">
             <mat-form-field appearance="outline">
-                <mat-label>Email Address
+                <mat-label>Employee's Email Address
                 </mat-label>
-                <input matInput placeholder="Email" formControlName = "email">
+                <input matInput placeholder="Employee's Email" formControlName = "email">
                 <mat-error *ngIf="email.invalid && email.touched" >
                   Invalid input
                 </mat-error>
@@ -33,23 +33,23 @@
         </div>
         <div class="form-entity">
             <mat-form-field appearance="outline">
-                <mat-label>Phone Number
+                <mat-label>Employee's Phone Number
                 </mat-label>
-                <input matInput placeholder="Number" formControlName = "phoneNumber">
+                <input matInput placeholder="Employee's Number" formControlName = "phoneNumber">
                 <mat-error *ngIf="phoneNumber.invalid && phoneNumber.touched" >
                   Invalid input
                 </mat-error>
               </mat-form-field>
         </div>
-        <!-- <div class="form-entity">
+        <div class="form-entity">
             <mat-radio-group aria-label="Select an option" formControlName = "gender">
                 <mat-radio-button [value]="option" *ngFor = "let option of options ">{{option}}</mat-radio-button>
               </mat-radio-group>
-        </div> -->
-        <!-- <br> -->
+        </div>
+        <br>
         <div class="form-entity">
             <mat-form-field appearance="fill">
-                <mat-label>DOB</mat-label>
+                <mat-label>Employee's DOB</mat-label>
                 <input matInput [matDatepicker]="picker" formControlName = "date">
                 <mat-error *ngIf="date.invalid && date.touched" >
                   Invalid input
